@@ -1,0 +1,55 @@
+/* Splash Screen Styles */
+/* Main content blur effect while splash screen is active */
+.app-content {
+    transition: filter 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 1;
+  }
+  
+  .app-content.blurred {
+    filter: blur(2px);
+    opacity: 0.5;
+  }
+  
+  .app-content.visible {
+    filter: blur(0);
+    opacity: 1;
+  }
+  
+  /* Splash Screen Styles */
+  .splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .splash-screen.fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .splash-text {
+    font-family: 'Times New Roman', serif;
+    color: white;
+    font-size: 6rem;
+    opacity: 1;
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
