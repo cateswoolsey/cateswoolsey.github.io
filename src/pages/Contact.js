@@ -1,6 +1,6 @@
 // src/pages/Contact.js
 import React from "react";
-import ContactForm from "../components/ContactForm"; 
+import ContactForm from "../components/ContactForm/ContactForm"; 
 import "../styles/ContactForm.css"; 
 
 function Contact() {
