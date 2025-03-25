@@ -1,17 +1,9 @@
 /* General Page Styles */
 body {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Andale Mono', 'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-}
-
-/* Header Styles */
-header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 2rem 0;
+  background-color: #000000;
 }
 
 /* Project Section Styles */
@@ -20,7 +12,7 @@ header {
 }
 
 .project {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 5px;

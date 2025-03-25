@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SplashScreen from "./transitions/SplashScreen";
 import Home from "./pages/Home";
@@ -23,7 +22,7 @@ function App() {
       setTimeout(() => {
         setShowSplash(false);
       }, 1000);
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -33,7 +32,7 @@ function App() {
       {/* Main content renders immediately */}
       <div className={`app-content ${showSplash ? "blurred" : "visible"}`}>
         <Header />
-        <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />

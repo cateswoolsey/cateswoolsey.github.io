@@ -20,7 +20,7 @@ function InputField({ label, type = "text", name, value, onChange, textarea }) {
           value={value} 
           onChange={onChange} 
           placeholder={`Enter your ${label.toLowerCase()}`}
-          pattern={type === "tel" ? "[0-9]{3}-[0-9]{3}-[0-9]{4}" : undefined} // Only applies to phone fields
+          pattern={type === "tel" ? "[0-9]{3}-[0-9]{3}-[0-9]{4}" : undefined} 
           required
         />
       )}
