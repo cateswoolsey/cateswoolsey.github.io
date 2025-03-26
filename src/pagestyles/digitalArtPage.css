@@ -1,36 +1,85 @@
 .digital-art-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem 2rem;
-    gap: 3rem;
-    background-color: #000; /* optional */
-  }
-  
-  .project-frame {
-    max-width: 600px;         /* set a reasonable max width */
-    margin: 2rem auto;        /* center it with some vertical spacing */
-    padding: 1rem;
-    background: black;        /* or your preferred bg */
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(148, 148, 226, 0.623); /* optional */
-  }
-  
-  .project-frame iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  background-color: #000;
+  /* Make sure we don't clip horizontally if content is wider than screen */
+  overflow-x: auto;
+}
 
-  .fade-in-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  }
-  
-  .fade-in-section.visible {
-    opacity: 1;
-    transform: none;
-  }
+.project-frame {
+  /* Inline-flex so it shrink-wraps content (iframe + caption) side-by-side */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Glow + spacing */
+  padding: 2rem 5rem; 
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(148, 148, 226, 0.6);
+  margin: 2rem auto;
+
+  /* Allow the box to expand or scroll horizontally if truly necessary */
+  overflow: visible;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.project-content {
+  /* Horizontal row for the iframe + caption */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-content iframe {
+  /* Large on wide screens */
+  width: 800px;
+  height: 400px;
+  border: none;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Caption box styling */
+.project-caption {
+  max-width: 240px;
+  background: rgba(15, 15, 15, 0.9);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(100, 200, 255, 0.08);
+  color: #d4f1ff;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(180, 220, 255, 0.06);
+  transition: transform 0.2s ease;
+  /* Ensure no word gets cut off */
+  overflow-wrap: break-word;
+}
+
+.project-caption h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #b7ddff;
+  letter-spacing: 0.5px;
+}
+
+.project-caption p {
+  margin: 0;
+  color: #cceeff;
+}

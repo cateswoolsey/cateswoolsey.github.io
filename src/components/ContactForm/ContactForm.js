@@ -34,44 +34,59 @@ function ContactForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Add form submission logic (e.g., send data to API)
+  
+    const response = await fetch("https://formspree.io/f/xqaploal", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
+  
+    if (response.ok) {
+      alert("Message sent!");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } else {
+      alert("Failed to send message. Try again later.");
+    }
   };
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <InputField
-        label="Name"
-        type="text"
-        name="name"
-        value={formData.name}
-        onChange={handleInputs}
-      />
-      <InputField
-        label="Email"
-        type="email"
-        name="email"
-        value={formData.email}
-        onChange={handleInputs}
-      />
-      <InputField
-      label="Phone"
-      type="tel"
-      name="phone"
-      value={formData.phone}
-      onChange = {handleInputs}
-      />
-      <InputField
-        label="Message"
-        name="message"
-        value={formData.message}
-        onChange={handleInputs}
-        textarea
-      />
-      <SubmitButton />
-    </form>
+    <div className="form-wrapper">
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <InputField
+          label="NAME"
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleInputs}
+        />
+        <InputField
+          label="EMAIL"
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleInputs}
+        />
+        <InputField
+          label="PHONE"
+          type="tel"
+          name="phone"
+          value={formData.phone}
+          onChange={handleInputs}
+        />
+        <InputField
+          label="MESSAGE"
+          name="message"
+          value={formData.message}
+          onChange={handleInputs}
+          textarea
+        />
+        <SubmitButton />
+      </form>
+    </div>
   );
 }
 

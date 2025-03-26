@@ -1,12 +1,19 @@
 /* Contact Form Container */
 .contact-form {
   width: 100%;
-  max-width: 500px;
-  margin: auto;
+  max-width: 480px;
+  margin: 4rem auto;
   padding: 2rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(20, 20, 20, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(181, 237, 255, 0.563);
+  font-family: 'Source Code Pro', monospace;
+  color: #e0f7ff;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow: 0 0 30px rgba(181, 236, 255, 0.906);
 }
 
 /* Form Group Styling */
@@ -18,38 +25,58 @@
 
 /* Label Styles */
 label {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: rgba(181, 236, 255, 0.906);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.05em;
 }
 
 /* Input and Textarea Styles */
 input, textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #dffbff;
   font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
+  font-family: inherit;
+  transition: all 0.2s ease;
 }
 
-textarea {
-  min-height: 120px;
-  resize: vertical;  /* Allows resizing the message box */
+input::placeholder,
+textarea::placeholder {
+  color: #777;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(181, 236, 255, 0.906);
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
+  outline: none;
 }
 
 /* Submit Button */
 .submit-btn {
-  padding: 1rem;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  margin-top: 0.5rem;
+  padding: 0.9rem 1.5rem;
+  background-color: #0b0b0b;
+  border: 1px solid rgba(181, 236, 255, 0.906);
+  color: #cceeff;
+  border-radius: 8px;
   font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(0,191,255,0.15);
 }
 
 .submit-btn:hover {
-  background-color: #005fa3;
+  background-color: #092e3d;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
+  transform: translateY(-1px);
 }

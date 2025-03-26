@@ -12,7 +12,6 @@ import dog2 from '../assets/dog2.jpg';
 import otters from '../assets/otters.png';
 import bike from '../assets/bike.png';
 import mona from '../assets/mona.png';
-import beach from '../assets/beach.jpg';
 
 export default function StudioArt() {
   useEffect(() => {
@@ -70,10 +69,6 @@ export default function StudioArt() {
 
       <div className="project-frame fade-in-section">
         <img src={dog2} alt="Abe Lincoln" className="project-thumbnail-abe" />
-      </div>
-
-      <div className="project-frame fade-in-section">
-        <img src={beach} alt="Abe Lincoln" className="project-thumbnail-abe" />
       </div>
 
       <div className="project-frame fade-in-section">

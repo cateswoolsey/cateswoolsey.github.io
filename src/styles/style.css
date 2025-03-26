@@ -52,7 +52,7 @@ body {
   text-align: left;
   backdrop-filter: blur(8px);
   animation: fadeIn 1.2s ease-in;
-  box-shadow: 0 0 15px rgba(148, 148, 226, 0.623); /* optional */
+  box-shadow: 0 0 15px rgba(181, 236, 255, 0.906);
   flex-wrap: wrap; /* so it's responsive */
 }
 
