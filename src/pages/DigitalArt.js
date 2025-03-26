@@ -59,7 +59,7 @@ export default function DigitalArt() {
             ></iframe>
             <div className="project-caption">
               <h3>Star Dance</h3>
-              <p>Star Dance is a generative, audio-reactive experience where stars pulsate, rotate, and shift in response to space-themed music. Click the image and press "p" to play or pause. Drag to pan around, while zooming in and out to explore the galaxy.</p>
+              <p>Star Dance is a generative, audio-reactive experience where stars pulsate and shift in response to space-themed music. Click the image and press "p" to play or pause. Drag to pan around, while zooming in and out to explore the galaxy.</p>
             </div>
           </div>
         </div>
