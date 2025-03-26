@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SplashScreen from "./transitions/SplashScreen";
@@ -15,7 +15,7 @@ function App() {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    // Trigger fade-out after 3 seconds
+    // Trigger fade-out after 4 seconds
     const timer = setTimeout(() => {
       setFadeOut(true);
       // Remove splash screen after fade-out animation (1 second)
@@ -28,24 +28,23 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <>
       {/* Main content renders immediately */}
       <div className={`app-content ${showSplash ? "blurred" : "visible"}`}>
         <Header />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/studioart" element={<StudioArt />} />
           <Route path="/digitalart" element={<DigitalArt />} />
-          <Route path="/resume" element={<Resume />}/>
+          <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
       </div>
 
       {/* SplashScreen overlays content and fades out smoothly */}
       {showSplash && <SplashScreen fadeOut={fadeOut} />}
-    </Router>
+    </>
   );
 }
 

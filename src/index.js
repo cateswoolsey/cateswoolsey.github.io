@@ -5,11 +5,14 @@ import App from './App';
 import "./styles/Index.css";
 import './fonts/fonts.css';
 import './fonts/welcome.css';
+import { HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
 
