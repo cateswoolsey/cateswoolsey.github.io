@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar"; // Adjust path if needed
+import Navbar from "./Navbar"; 
 
 export default function Header() {
   return (

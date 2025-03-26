@@ -18,3 +18,79 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+
+.main-content h2 {
+  font-size: 2rem;
+  color: #b3f0ff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px rgba(179, 240, 255, 0.4);
+}
+
+.main-content p {
+  font-size: 1.1rem;
+  color: #cce7f0;
+  margin-bottom: 1rem;
+}
+
+/*Below is for the about me section*/
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  gap: 4rem;
+  margin: 6rem auto;
+  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(173, 216, 230, 0.15);
+  color: #dff0f8cc;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.7;
+  text-align: left;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 1.2s ease-in;
+  box-shadow: 0 0 15px rgba(148, 148, 226, 0.623); /* optional */
+  flex-wrap: wrap; /* so it's responsive */
+}
+
+.about-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(180, 220, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.about-image {
+  width: 200px; /* adjust size */
+  height: 245px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(19, 110, 141, 0.4);
+  filter: grayscale(100%);
+}
+
+.about-text {
+  flex: 1;
+  max-width: 500px;
+  color: #c9dffc;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #c9e6ff;
+  text-shadow: 0 0 10px rgba(150, 200, 255, 0.5);
+}
+
+.about-text p {
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+

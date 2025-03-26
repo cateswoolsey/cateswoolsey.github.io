@@ -1,0 +1,53 @@
+.digital-art-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 3rem;
+    background-color: #000; /* optional */
+  }
+  
+  .project-frame {
+    width: 90%;
+    max-width: 900px;
+    aspect-ratio: 3 / 2;
+    box-shadow: 0 0 30px rgba(25, 76, 194, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .project-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+  
+  .project-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px; /* optional */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* optional */
+  }
+
+  .project-thumbnail-abe {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px; /* optional */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* optional */
+  }
+
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in-section.visible {
+    opacity: 1;
+    transform: none;
+  }
