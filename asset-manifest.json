@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.342cc81a.css",
-    "main.js": "/static/js/main.d8d48c1a.js",
+    "main.css": "/static/css/main.992790ff.css",
+    "main.js": "/static/js/main.56bfa59d.js",
     "static/media/abe.jpg": "/static/media/abe.6d13e3b39d34074e7bc3.jpg",
     "static/media/cat.png": "/static/media/cat.daacc809864ee27bcad1.png",
     "static/media/otters.png": "/static/media/otters.971b636faf724c034487.png",
     "static/media/mona.png": "/static/media/mona.40cb1ed6c2c5ffdaf423.png",
     "static/media/bike.png": "/static/media/bike.09515ee8b07582bb48c0.png",
     "static/media/orange.png": "/static/media/orange.a764dd2d82a317cc1327.png",
+    "static/media/beach.png": "/static/media/beach.c6d8667b3c140240bf13.png",
     "static/media/food.png": "/static/media/food.bbdb72d7b9a7c054f4c8.png",
     "static/media/photo.png": "/static/media/photo.bc63edb9c7eb3c7b6c24.png",
     "static/media/dog1.jpg": "/static/media/dog1.1e438c2b5be3c042d927.jpg",
     "static/media/dog2.jpg": "/static/media/dog2.884b84bc8d1dca307eac.jpg",
     "static/media/nighthawk.jpg": "/static/media/nighthawk.7c4f733add1595d6f09b.jpg",
     "index.html": "/index.html",
-    "main.342cc81a.css.map": "/static/css/main.342cc81a.css.map",
-    "main.d8d48c1a.js.map": "/static/js/main.d8d48c1a.js.map"
+    "main.992790ff.css.map": "/static/css/main.992790ff.css.map",
+    "main.56bfa59d.js.map": "/static/js/main.56bfa59d.js.map"
   },
   "entrypoints": [
-    "static/css/main.342cc81a.css",
-    "static/js/main.d8d48c1a.js"
+    "static/css/main.992790ff.css",
+    "static/js/main.56bfa59d.js"
   ]
 }

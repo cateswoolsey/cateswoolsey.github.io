@@ -12,6 +12,7 @@ import dog2 from '../assets/dog2.jpg';
 import otters from '../assets/otters.png';
 import bike from '../assets/bike.png';
 import mona from '../assets/mona.png';
+import beach from '../assets/beach.png';
 
 export default function StudioArt() {
   useEffect(() => {
@@ -35,28 +36,20 @@ export default function StudioArt() {
     <div className="digital-art-page">
 
       <div className="project-frame fade-in-section">
+        <img src={cat} alt="Cat Sketch" className="project-thumbnail-abe" />
+      </div>
+
+      <div className="project-frame fade-in-section">
         <img src={abeImage} alt="Abraham Lincoln Sketch" className="project-thumbnail-abe" />
       </div>
 
 
       <div className="project-frame fade-in-section">
-        <img src={cat} alt="Abe Lincoln" className="project-thumbnail-abe" />
+        <img src={beach} alt="Beach" className="project-thumbnail-abe" />
       </div>
 
       <div className="project-frame fade-in-section">
-        <img src={mona} alt="Abe Lincoln" className="project-thumbnail-abe" />
-      </div>
-
-      <div className="project-frame fade-in-section">
-        <img src={dog1} alt="Abe Lincoln" className="project-thumbnail-abe" />
-      </div>
-
-      <div className="project-frame fade-in-section">
-        <img src={nighthawkImage} alt="Nighthawk" className="project-thumbnail-abe" />
-      </div>
-
-      <div className="project-frame fade-in-section">
-        <img src={orange} alt="Orange" className="project-thumbnail-abe" />
+        <img src={nighthawkImage} alt="Nighthawks" className="project-thumbnail-abe" />
       </div>
 
       <div className="project-frame fade-in-section">
@@ -64,17 +57,28 @@ export default function StudioArt() {
       </div>
 
       <div className="project-frame fade-in-section">
-        <img src={otters} alt="Abe Lincoln" className="project-thumbnail-abe" />
+        <img src={mona} alt="Mona Lisa" className="project-thumbnail-abe" />
       </div>
 
       <div className="project-frame fade-in-section">
-        <img src={dog2} alt="Abe Lincoln" className="project-thumbnail-abe" />
+        <img src={otters} alt="Otters" className="project-thumbnail-abe" />
       </div>
 
       <div className="project-frame fade-in-section">
-        <img src={bike} alt="Abe Lincoln" className="project-thumbnail-abe" />
+        <img src={dog1} alt="Dog" className="project-thumbnail-abe" />
       </div>
 
+      <div className="project-frame fade-in-section">
+        <img src={dog2} alt="Dog" className="project-thumbnail-abe" />
+      </div>
+
+      <div className="project-frame fade-in-section">
+        <img src={bike} alt="Bike" className="project-thumbnail-abe" />
+      </div>
+
+      <div className="project-frame fade-in-section">
+        <img src={orange} alt="Orange" className="project-thumbnail-abe" />
+      </div>
     </div>
   );
 }

@@ -71,7 +71,7 @@ export default function DigitalArt() {
             allowFullScreen
           ></iframe>
           <div className="project-caption">
-            <h3>Star Dance</h3>
+            <h3>A BOX OF STARS</h3>
             <p>
               A generative, audio-reactive experience where stars pulsate 
               and shift in response to space-themed music. <br />
