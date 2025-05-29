@@ -1,8 +1,14 @@
-@import './style.css';
 @import './Footer.css';
 @import './Navbar.css';
 @import './SplashStyle.css';
 
+/* General Page Styles */
+body {
+  font-family: 'Andale Mono', 'Courier New', Courier, monospace;
+  background-color: #f8f8f8dc;
+}
+
+/* Header Styles */
 .header-bar {
     box-shadow:
       0 0 10px rgba(98, 213, 255, 0.05),
@@ -14,11 +20,76 @@
     justify-content: space-between; /* brand on the left, nav on the right */
     align-items: center; 
     padding: 1.5rem 3rem; 
-    border-bottom: 1px solid rgba(167, 165, 225, 0.1);
+    border-bottom: 1px solid rgba(56, 56, 59, 0.343);
   }
 
   .navbar-container {
     /* Ensure the navbar does not stretch, and is aligned to the right */
-    flex: 0 1 auto;
+    flex: 0 0 auto;
   }
+
+/*Below is for the about me section*/
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  gap: 4rem;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.7;
+  text-align: left;
+  animation: fadeIn 1.2s ease-in;
+  flex-wrap: wrap; /* so it's responsive */
+}
+
+/* About Image */
+.about-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(180, 220, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.about-image {
+  width: 200px; /* adjust size */
+  height: 245px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+/* About Text */
+.about-text {
+  flex: 1;
+  padding: 1rem;
+  color: #1d1b1b;
+  font-family: 'JetBrains Mono', monospace;
+
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1d1b1b;
+}
+
+.about-text p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Footer Text */
+.footer-text {
+  align-items: center;
+  color: #1d1b1b;
+  margin: 6rem auto;
+  padding: 2rem 3rem;
+}
+
 

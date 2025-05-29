@@ -5,10 +5,10 @@ function Navbar() {
   return (
   <nav>
     <ul>
-    <li><Link to="/" className="glow-text">HOME</Link></li>
-    <li><Link to="/digitalart" className="glow-text">DIGITAL ART</Link></li>
-    <li><Link to="/studioart" className="glow-text">STUDIO ART</Link></li>
-    <li><Link to="/contact" className="glow-text">CONTACT</Link></li>
+    <li><Link to="/" className="main-font">Home</Link></li>
+    <li><Link to="/digitalart" className="main-font">Genderative Art</Link></li>
+    <li><Link to="/studioart" className="main-font">Studio Art</Link></li>
+    <li><Link to="/contact" className="main-font">Contact</Link></li>
     </ul>
   </nav>
   );

@@ -3,10 +3,10 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="header-container bg-black">
+    <header className="header-container">
       <div className="logo-container">
-          <h1 className="glow-text-header">CATE SONG WOOLSEY</h1>
-          <p className="glow-text-sub">Web Developer | Creative Coder</p>
+          <h1>CATE SONG WOOLSEY</h1>
+          <p>Web Developer | Creative Coder</p>
       </div>
       <div className="navbar-container">
         <Navbar />
