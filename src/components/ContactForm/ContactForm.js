@@ -54,31 +54,31 @@ function ContactForm() {
   };
 
   return (
-    <div className="form-wrapper">
+    <div className="contact-wrapper">
       <form className="contact-form" onSubmit={handleSubmit}>
         <InputField
-          label="NAME"
+          label="Name"
           type="text"
           name="name"
           value={formData.name}
           onChange={handleInputs}
         />
         <InputField
-          label="EMAIL"
+          label="Email"
           type="email"
           name="email"
           value={formData.email}
           onChange={handleInputs}
         />
         <InputField
-          label="PHONE"
+          label="Phone"
           type="tel"
           name="phone"
           value={formData.phone}
           onChange={handleInputs}
         />
         <InputField
-          label="MESSAGE"
+          label="Message"
           name="message"
           value={formData.message}
           onChange={handleInputs}

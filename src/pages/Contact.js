@@ -5,7 +5,7 @@ import "../styles/ContactForm.css";
 
 function Contact() {
   return (
-    <div className="contact-page">
+    <div className="contact-header">
       <h1>Contact Me</h1>
       <p>I'd love to hear from you! Please fill out the form below.</p>
       <ContactForm /> 

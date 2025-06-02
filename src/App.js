@@ -29,7 +29,6 @@ function App() {
 
   return (
     <>
-      {/* Main content renders immediately */}
       <div className={`app-content ${showSplash ? "blurred" : "visible"}`}>
         <Header />
         <Routes>
@@ -42,7 +41,6 @@ function App() {
         <Footer />
       </div>
 
-      {/* SplashScreen overlays content and fades out smoothly */}
       {showSplash && <SplashScreen fadeOut={fadeOut} />}
     </>
   );

@@ -27,7 +27,7 @@ export default function DigitalArt() {
             allowFullScreen
           ></iframe>
         </div>
-        <div className="project-caption-metaballs">
+        <div className="project-caption">
           <h3>Metaballs</h3>
           <p>
             An experiment in organic motion using marching squares 
@@ -44,7 +44,7 @@ export default function DigitalArt() {
             allowFullScreen
           ></iframe>
         </div>
-        <div className="project-caption-time">
+        <div className="project-caption">
           <h3>Circle Time</h3>
           <p>
             A dynamic time visualization that uses ripples and pulsing colors
@@ -64,7 +64,7 @@ export default function DigitalArt() {
             allowFullScreen
           ></iframe>
         </div>
-        <div className="project-caption-star">
+        <div className="project-caption">
           <h3>A BOX OF STARS</h3>
           <p>
             A generative, audio-reactive experience where stars pulsate

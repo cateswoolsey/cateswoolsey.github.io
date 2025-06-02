@@ -53,13 +53,13 @@
   margin-bottom: -75px;
 }
 
-.project-caption-metaballs {
+.project-caption {
   width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: rgba(180, 220, 255, 0.06);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(100, 200, 255, 0.08);
   color: #1d1b1b;
@@ -71,52 +71,7 @@
   overflow-wrap: break-word;
   box-sizing: border-box;
   transition: transform 0.2s ease;
-  transform: scale(0.85) translateY(-30px);
-  margin-bottom: -75px;
-}
-
-.project-caption-time {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgba(180, 220, 255, 0.06);
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(100, 200, 255, 0.08);
-  color: #1d1b1b;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 1rem;
-  line-height: 1.7;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(8, 8, 8, 0.856);
-  overflow-wrap: break-word;
-  box-sizing: border-box;
-  transition: transform 0.2s ease;
-  transform: scale(0.85) translateY(-30px);
-  margin-bottom: -75px;
-}
-
-.project-caption-star {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgba(180, 220, 255, 0.06);
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(100, 200, 255, 0.08);
-  color: #1d1b1b;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 1rem;
-  line-height: 1.7;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(8, 8, 8, 0.856);
-  overflow-wrap: break-word;
-  box-sizing: border-box;
-  transition: transform 0.2s ease;
-  transform: scale(0.85) translateY(-30px);
-  margin-bottom: -75px;
+  margin-top: 2rem; 
 }
 
 .project-caption h3 {
@@ -145,11 +100,14 @@
     width: 100%;
     aspect-ratio: 16 / 10;
     height: auto;
+    margin-bottom: 0;
   }
 
-  .project-caption-metaballs,
-  .project-caption-time,
-  .project-caption-star {
+  .iframe-wrapper iframe {
+    margin-bottom: 0;
+  }
+
+  .project-caption {
     max-width: 90%;
     width: auto;
     text-align: center;

@@ -1,19 +1,21 @@
+.contact-wrapper {
+  display: flex;
+  justify-content: flex-end; 
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Contact Form Container */
 .contact-form {
   width: 100%;
   max-width: 480px;
-  margin: 3rem auto;
   padding: 2rem;
-  background-color: rgba(20, 20, 20, 0.95);
+  background-color: #f4f4f4dc;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(181, 236, 255, 0.906);
+  border: 1px solid #333;
   font-family: 'Source Code Pro', monospace;
-  color: #e0f7ff;
   transition: box-shadow 0.3s ease;
-}
-
-.contact-form:hover {
-  box-shadow: 0 0 30px rgba(181, 236, 255, 0.906);
 }
 
 /* Form Group Styling */
@@ -26,7 +28,7 @@
 /* Label Styles */
 label {
   font-weight: 600;
-  color: rgba(181, 236, 255, 0.906);
+  color: rgba(19, 19, 19, 0.906);
   font-size: 0.85rem;
   text-transform: uppercase;
   margin-bottom: 0.4rem;
@@ -36,14 +38,14 @@ label {
 /* Input and Textarea Styles */
 input, textarea {
   padding: 0.75rem 1rem;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.888);
   border: 1px solid #333;
   border-radius: 8px;
-  color: #dffbff;
+  color: #333;
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.2s ease;
-}
+}d
 
 input::placeholder,
 textarea::placeholder {
@@ -52,8 +54,8 @@ textarea::placeholder {
 
 input:focus,
 textarea:focus {
-  border-color: rgba(181, 236, 255, 0.906);
-  box-shadow: 0 0 8px rgba(0, 191, 255, 0.3);
+  border-color: rgba(19, 20, 21, 0.906);
+  box-shadow: 0 0 8px rgba(100, 100, 100, 0.606);
   background-color: rgba(255, 255, 255, 0.05);
   outline: none;
 }
@@ -62,21 +64,21 @@ textarea:focus {
 .submit-btn {
   margin-top: 0.5rem;
   padding: 0.9rem 1.5rem;
-  background-color: #0b0b0b;
-  border: 1px solid rgba(181, 236, 255, 0.906);
-  color: #cceeff;
+  background-color: #ffffffdc;
+  border: 1px solid rgba(0, 0, 0, 0.906);
+  color: #101010;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 8px rgba(0,191,255,0.15);
+  box-shadow: 0 0 8px rgba(99, 99, 99, 0.615);
 }
 
 .submit-btn:hover {
-  background-color: #092e3d;
-  color: #ffffff;
-  box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
+  background-color: #ffffff79;
+  color: #101010b3;
+  box-shadow: 0 0 12px rgba(99, 99, 99, 0.615);
   transform: translateY(-1px);
 }
